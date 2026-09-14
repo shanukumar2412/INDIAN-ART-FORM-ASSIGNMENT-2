@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C1B33"/>
+      <stop offset="100%" stop-color="#0F0B09"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="800" fill="url(#bgGrad)" />
+  <circle cx="600" cy="380" r="320" fill="url(#glow)" />
+
+  <!-- Outer Traditional Archival Frame -->
+  <rect x="20" y="20" width="1160" height="760" fill="none" stroke="#D4AF37" stroke-width="4" stroke-opacity="0.6"/>
+  <rect x="35" y="35" width="1130" height="730" fill="none" stroke="#0077B6" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Corner Ornamental Motifs -->
+  <g fill="#D4AF37">
+    <polygon points="40,40 80,40 40,80" />
+    <polygon points="1160,40 1120,40 1160,80" />
+    <polygon points="40,760 80,760 40,720" />
+    <polygon points="1160,760 1120,760 1160,720" />
+  </g>
+
+  <!-- Central Emblem & Artwork Representation -->
+  <g transform="translate(600, 360)" filter="url(#shadow)">
+    
+    <!-- Outer Sacred Ring -->
+    <circle cx="0" cy="0" r="220" fill="none" stroke="#D4AF37" stroke-width="3"/>
+    <circle cx="0" cy="0" r="200" fill="none" stroke="#0077B6" stroke-width="1.5" stroke-dasharray="12,6"/>
+
+    <!-- Dynamic Art Motif Shapes -->
+    <path d="M-120,0 Q0,-160 120,0 Q0,160 -120,0 Z" fill="none" stroke="#D4AF37" stroke-dasharray="4,4" stroke-width="2" />
+    <path d="M0,-120 Q160,0 0,120 Q-160,0 0,-120 Z" fill="none" stroke="#E63946" stroke-dasharray="4,4" stroke-width="2" />
+
+    <!-- Central Icon Badge -->
+    <circle cx="0" cy="0" r="110" fill="#140F0D" stroke="#D4AF37" stroke-width="3"/>
+
+    <!-- State Initials & Motif Icon -->
+    <text x="0" y="-15" text-anchor="middle" fill="#D4AF37" font-family="serif" font-size="52" font-weight="bold" letter-spacing="2">
+      RJ
+    </text>
+    <text x="0" y="35" text-anchor="middle" fill="#0077B6" font-family="sans-serif" font-size="16" font-weight="600" letter-spacing="3">
+      HERITAGE ART
+    </text>
+  </g>
+
+  <!-- Decorative Pattern Lines -->
+  <g stroke="#D4AF37" stroke-opacity="0.3" stroke-width="2" fill="none">
+    <circle cx="150" cy="180" r="70" />
+    <circle cx="1050" cy="180" r="70" />
+    <circle cx="150" cy="620" r="70" />
+    <circle cx="1050" cy="620" r="70" />
+  </g>
+
+  <!-- Title & Subtitle Banner -->
+  <g transform="translate(600, 680)">
+    <rect x="-350" y="-45" width="700" height="70" rx="16" fill="#181311" stroke="#D4AF37" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="-15" text-anchor="middle" fill="#FAF7F2" font-family="'Times New Roman', Georgia, serif" font-size="28" font-weight="bold" letter-spacing="1">
+      🎨 Pichwai & Blue Pottery
+    </text>
+    <text x="0" y="12" text-anchor="middle" fill="#D4AF37" font-family="sans-serif" font-size="13" font-weight="600" letter-spacing="2">
+      🏛️ AUTHENTIC ARCHIVAL HERITAGE COLLECTION • RAJASTHAN
+    </text>
+  </g>
+
+</svg>
