@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/indian-art-form/',
+  base: '/INDIAN-ART-FORM-ASSIGNMENT-2/',
   plugins: [react(), tailwindcss()],
   server: {
     host: true,
